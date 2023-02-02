@@ -3123,6 +3123,22 @@ body.visible-menu-bar .fullscreen-menu{
 	font-family: 'Poppins', sans-serif;
 }
 
+.price-block .inner-box .price-join{
+	position:relative;
+	font-size:20px;
+	line-height:1em;
+	color:#ffffff;
+	margin-top:40px;
+	margin-bottom:20px;
+	font-family: 'MonumentExtended-Ultrabold';
+}
+
+.price-block .inner-box .price-join span{
+	font-weight:400;
+	display:block;
+	font-size:14px;
+	font-family: 'Poppins', sans-serif;
+
 .price-block .inner-box .theme-btn{
 	cursor:pointer;
 }
