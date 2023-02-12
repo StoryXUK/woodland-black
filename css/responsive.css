@@ -8,6 +8,13 @@
 	
 }
 
+@media only screen and (min-width: 1140px){
+
+	.price-block .mem-type{
+		display:none;
+	}
+}
+
 @media only screen and (max-width: 1140px){
 	
 	.main-header{
