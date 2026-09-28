@@ -3029,35 +3029,20 @@ body.visible-menu-bar .fullscreen-menu{
 .price-block{
 	position:relative;
 	margin-bottom:30px;
+	display:flex;
 }
 
 .price-block .side-text{
-	position:absolute;
-	left:5px;
-	bottom:0px;
-	opacity:0.20;
-	font-size:40px;
-	color: transparent;
-	transform:rotate(-90deg);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ffffff;
-	font-family: 'MonumentExtended-Ultrabold';
-	text-transform:uppercase;
-	transform-origin: 7% 20%;
+	display:none;
 }
-
-.pricing-section .price-block:nth-child(2) .side-text{
-	left:0px;
-	bottom:-3px;
-	transform-origin: 5% 0%;
-}
-
 .price-block .inner-box{
 	position:relative;
 	text-align:center;
-	margin-left:30px;
-	padding:50px 35px 55px;
+	width:100%;
+	padding:42px 45px 50px;
 	border:2px solid rgba(255,255,255,0.20);
+	background-color:rgba(0,0,0,0.22);
+	overflow:hidden;
 }
 
 .price-block .inner-box:before{
@@ -3081,10 +3066,44 @@ body.visible-menu-bar .fullscreen-menu{
 
 .price-block .inner-box .icon-box{
 	position:relative;
+	margin-top:24px;
 	font-size:70px;
 	line-height:1em;
 	color:#ffffff;
 	font-weight:300;
+}
+
+.price-block .mem-type{
+	position:relative;
+	margin:0;
+	padding-bottom:18px;
+	color:#ffffff;
+	font-size:28px;
+	line-height:1.15em;
+	letter-spacing:1px;
+	font-family:'MonumentExtended-Ultrabold';
+	text-transform:uppercase;
+}
+
+.price-block .mem-type:after{
+	position:absolute;
+	content:'';
+	left:50%;
+	bottom:0;
+	width:54px;
+	height:3px;
+	background-color:#e5fe00;
+	transform:translateX(-50%);
+}
+
+.price-block .mem-type span{
+	display:block;
+	margin-top:8px;
+	color:rgba(255,255,255,0.62);
+	font-size:13px;
+	line-height:1.3em;
+	letter-spacing:2px;
+	font-family:'Poppins', sans-serif;
 }
 
 .price-block .inner-box .price-list{
